@@ -4,8 +4,8 @@
     "description": "Reactive<x> storybook playground",
     "main": "index.js",
     "scripts": {
-        "storybook": "start-storybook -p 9001 -c .storybook",
-        "build-storybook": "build-storybook",
+        "storybook": "start-storybook -s ./public -p 9001",
+        "build-storybook": "build-storybook -s public",
         "deploy-storybook": "storybook-to-ghpages"
     },
     "repository": {
@@ -30,7 +30,7 @@
     },
     "dependencies": {
         "@appbaseio/reactive-manual-vue": "git://github.com/appbaseio/reactive-manual.git#v1-vue",
-        "@appbaseio/reactivesearch-vue": "1.15.1",
+        "@appbaseio/reactivesearch-vue": "1.16.0-alpha.4",
         "@storybook/theming": "5.1.9",
         "vue": "^2.6.10"
     }
